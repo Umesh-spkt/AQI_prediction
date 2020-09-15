@@ -42,6 +42,10 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="{% url 'main:about' %}">About</a>>
                 </li>
+                 </li>
+                <li class="nav-item active">
+                    <a  class="nav-link" href="#bottom">Contact Us</a>>
+                </li>
 
             </ul>
 
@@ -51,13 +55,64 @@
 
     </main>
 
-    <footer class="footer mt-auto py-3">
-        <div class="container-fluid bg-dark text-white">
-            <center>
-          <span >&copy; airqualityprediction -Achs @2020</span>
-            </center>
-        </div>
-      </footer>
+<div id="bottom"></div>
+<footer  class="page-footer font-small bg-dark text-white">
+  <div class="container-fluid text-center text-md-left">
+    <div class="row text-center text-md-left mt-3 pb-3">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold"> </h6>
+        <p>This project -AQI prediction system is a combined efforts of our Team
+        members. We hope to come up with more such project in future and solve real world problems.</p>
+      </div>
+
+      <hr class="w-100 clearfix d-md-none">
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+        <p>
+          <a href="{% url 'main:home-page' %}">Home</a>
+        </p>
+        <p>
+          <a href="{% url 'main:past-data' %}">Past data</a>
+        </p>
+        <p>
+          <a href="{% url 'main:predict' %}">Predict data</a>
+        </p>
+
+      </div>
+      <hr class="w-100 clearfix d-md-none">
+
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p>
+          <i class="fas fa-home mr-3"></i> Kathmandu, Nepal </p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i>utsavdh@gmail.com</p>
+           <p>
+          <i class="fas fa-envelope mr-3"></i> nbngc7@gmail.com</p>
+           <p>
+          <i class="fas fa-envelope mr-3"></i>  rayriderkhadka@gmail.com</p>
+          <p>
+          <i class="fas fa-envelope mr-3"></i>  sapkotaumesh4@gmail.com</p>
+
+      </div>
+
+    </div>
+
+    <hr>
+    <div class="row d-flex align-items-center">
+
+      <div class="col-md-12 col-lg-8">
+
+        <p class="text-center ">&copy; AirqualityPrediction -Achs @2020
+        </p>
+
+      </div>
+      </div>
+    </div>
+
+
+
+</footer>
       </body>
 </body>
 

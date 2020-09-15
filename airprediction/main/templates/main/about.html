@@ -6,20 +6,55 @@
 
 {% block title %}About{% endblock %}
 
-
 {% block content %}
-	
- 	<div class="container-fluid">
-		 <div class="row">
-		  <div class="col text-center">
-		  	<h6>Air Quality Index levels:</h6>
-		    <div class="thumbnail">
-		        <img src="{% static 'main/img/aqi.jpg'%}" alt="Lights">
-		       
-		   	</div>
-			</div>
-		</div>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% url 'main:home-page' %}">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">About</li>
+  </ol>
+</nav>
+<section class="about-page">
+	<div class="container p-1 p-sm-3">
+<div class="row">
+	<div class = "col-12 text-center">
+		<h2> Welcome To Air Quality Prediction System</h2>
+		<hr />
 	</div>
+<div class= "col-md-3">
+   <img class="img_fluid" src="{% static 'main/img/logo.jpg'%}">
+</div>
+	<div class ="col-9">
+		<p>
+			Air pollution is considered to be one of the biggest environmental threats. Air Quality Prediction System
+			has sole purpose of providing insights about daily air quality. We have used Machine learning  approach  to
+			predict ambient air quality with the help of air quality data. We have obtained ground data sets from Department
+			of Hydrology and Meteorology which were used in Prediction of Air Quality Index.
+		</p>
+	   <p>
+			Our<a href="{% url 'main:predict' %}"> Predict AQI </a> page can successfully  predict Air Quality Index of Kathmandu
+		   City with reasonable accuracy. Particulate matters in air is our primary feature to predict the air quality.
+		   We have used PM 10, PM 2.5, O3 to predict Air Quality Index. The predicted AQI value can be compared against
+		   the category table below to Know quality of air. One can access the past data of respective parameters from
+		   our <a href="{% url 'main:past-data' %}"> Past data</a> page to study trend of air pollution level
+	  in previous years.
+
+		</p>
+	</div>
+</div>
+	</div>
+</section>
+<div class="alert alert-dark" role="alert">
+		  <div class="col text-center">
+		  	<h5>Air Quality Index levels:</h5>
+			</div>
+</div>
+<center>
+	  <div class="thumbnail ">
+		        <img src="{% static 'main/img/aqi.jpg'%}" alt="Lights">
+
+ </div>
+</center>
 
 {% endblock %}
 
